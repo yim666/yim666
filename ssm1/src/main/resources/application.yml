@@ -1,0 +1,16 @@
+#SpringBoot连接mysql
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/javaweb?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+
+#SpringBoot  Mybatis
+mybatis:
+
+  mapper-locations: classpath:*.xml
+
+  configuration:
+    map-underscore-to-camel-case: true
+
